@@ -44,7 +44,7 @@ export default function Sportlight() {
             </div>
           </div>
         </div>
-        <div className=" max-w-[1440px] mx-auto  pt-80 lg:pt-100 p-5 lg:p-0  ">
+        <div className=" max-w-[1320px] mx-auto  pt-80 lg:pt-100 p-5 lg:p-0  ">
           <Link href="/Catalog">
             <div className="flex items-center justify-between text-center relative">
               <div className="flex items-center gap-2 pt-0 absolute left-0">

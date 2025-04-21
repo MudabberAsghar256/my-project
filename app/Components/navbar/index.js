@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#345BA2] fixed z-20 top-0 start-0 w-full">
-      <div className="flex max-w-[1380px] mx-auto justify-between items-center p-4">
+      <div className="flex max-w-[1320px] mx-auto justify-between items-center p-4">
         <Link href="/">
           <img
             src="/image/nav-logo.svg"
@@ -39,7 +39,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="/about"
+                href="/Explore"
                 className="block py-2 px-3 text-white lg:text-[16px]"
               >
                 Explore All
@@ -50,7 +50,7 @@ export default function Navbar() {
                 href="/services"
                 className="block py-2 px-3 text-white lg:text-[16px]"
               >
-                Contact
+                Contact Us
               </Link>
             </li>
             <li className="sm:block md:hidden">

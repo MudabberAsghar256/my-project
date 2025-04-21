@@ -7,7 +7,7 @@ export default function Navbar3() {
     <nav>
       <div className="w-full">
         <nav className="bg-white fixed w-full z-20 top-0 start-0 shadow-lg ">
-          <div className="max-w-[1440px] mx-auto  flex flex-wrap items-center justify-between p-5 mp-4 ">
+          <div className="max-w-[1320px] mx-auto  flex flex-wrap items-center justify-between p-5 mp-4 ">
             <img
               src="/image/nav-logo2.svg"
               className="lg:h-[51px] lg:w-[78px] w-[77px] h-[50px] "

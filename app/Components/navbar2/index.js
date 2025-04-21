@@ -7,7 +7,7 @@ export default function Navbar2() {
     <nav>
       <div className="w-full">
         <nav className="bg-transperent fixed w-full z-20 top-0 start-0 ">
-          <div className="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between p-4">
+          <div className="max-w-[1320px] mx-auto flex flex-wrap items-center justify-between p-4">
             <img
               src="/image/nav-logo2.svg"
               className="lg:h-[51px] lg:w-[78px] w-[77px] h-[50px] "
@@ -52,7 +52,7 @@ export default function Navbar2() {
                 </li>
                 <li>
                   <Link
-                    href="/about"
+                    href="/Explore"
                     className="block py-2 px-3 text-black lg:text-[16px]"
                   >
                     Explore All

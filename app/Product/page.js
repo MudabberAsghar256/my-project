@@ -29,7 +29,7 @@ export default function Product() {
       <div className="relative">
         {/* <Navbar3 /> */}
 
-        <div className="max-w-[1380px] mx-auto w-full grid grid-cols-1 md:grid-cols-10 lg:pt-30 pt-24">
+        <div className="max-w-[1320px] mx-auto w-full grid grid-cols-1 md:grid-cols-10 lg:pt-30 pt-24">
           <div className="h-full col-span-4">
             <Link href="/Sportlight">
               <div className="items-center justify-between text-center hidden md:block pb-4">
@@ -43,7 +43,7 @@ export default function Product() {
                 </div>
               </div>
             </Link>
-            <div className="relative lg:w-[494px] lg:h-[447px]">
+            <div className="relative lg:w-[494px] lg:h-[447px] h-[250px]">
               <img
                 src={images[currentIndex]}
                 alt="Product"
@@ -59,7 +59,7 @@ export default function Product() {
                   />
                 </div>
               </Link>
-              <div className="mt-4 md:hidden block top-1/2 left-2 ml-12 transform -translate-y-3/2  r p-2  overflow-x-auto lg:w-[400px]">
+              <div className="mt-4 md:hidden block top-1/2 left-2 lg:ml-12 transform -translate-y-3/2  r p-2  overflow-x-auto lg:w-[400px]">
                 <div className="flex gap-2">
                   {images.map((img, index) => (
                     <img
@@ -79,7 +79,7 @@ export default function Product() {
 
               <button
                 onClick={handlePrev}
-                className="absolute top-1/2 left-2 transform -translate-y-1/2  r p-2"
+                className="absolute lg:top-1/2 md:top-2/4 top-2/5 left-2 transform -translate-y-1/2  r p-2"
               >
                 <img
                   src="/image/left-arow.svg"
@@ -90,7 +90,7 @@ export default function Product() {
 
               <button
                 onClick={handleNext}
-                className="absolute top-1/2 right-2 transform -translate-y-1/2  p-2"
+                className="absolute lg:top-1/2 md:top-2/4 top-2/5 right-2 transform -translate-y-1/2  p-2"
               >
                 <img
                   src="/image/right-arow.svg"
@@ -119,9 +119,9 @@ export default function Product() {
             </div>
           </div>
 
-          <div className=" lg:p-5  lg:mt-2 lg:ml-5 col-span-5">
+          <div className=" lg:p-5  lg:mt-2  col-span-5">
             <div className="p-5 lg:p-0">
-              <h2 className="lg:text-[32px] text-[24px] font-bold text-blue-900 mb-4">
+              <h2 className="lg:text-[32px] text-[24px] font-bold text-blue-900 lg:mb-4">
                 Name of Product
               </h2>
               <p className="text-gray-600 lg:text-[15px] mb-4 lg:w-[530px] ">

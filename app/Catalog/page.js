@@ -38,13 +38,13 @@ export default function Catalog() {
           <h1 className="lg:text-[42px] lg:mr-15 mr-12 text-[25px]  lg:pt-40 pt-30">
             Azelis brings
           </h1>
-          <div className="lg:ml-45 ml-20 text-[#2AA7DF] lg:text-[42px] text-[25px] ">
+          <div className="lg:ml-40 ml-20 text-[#2AA7DF] lg:text-[42px] text-[25px] ">
             <span className="font-bold">Your</span> ideas
           </div>
           <div className="lg:text-[42px] text-[25px] ">to life</div>
         </div>
 
-        <div className="max-w-[1380px] mx-auto lg:pt-20 pt-5 bg-white">
+        <div className="max-w-[1320px] mx-auto lg:pt-20 pt-5 bg-white">
           <div className="  pt-3 p-5  xl:p-0 ">
             <Link href="/">
               <div className="flex items-center justify-between text-center relative pb-[20px] lg:pt-10 pt-20">
