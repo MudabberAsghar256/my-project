@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Navbar3 from "../Components/navbar3";
+
 import Product1 from "../Common/product1";
 
 const products = Array.from({ length: 12 }, (_, i) => ({
@@ -14,9 +14,8 @@ const products = Array.from({ length: 12 }, (_, i) => ({
 
 export default function Explore() {
   return (
-    <div className="bg-white py-5h-[100vh] min-h-screen ">
-      <div className="max-w-screen-xl  mx-auto lg:pt-30 p-5 lg:p-0">
-        <Navbar3 />
+    <div className="bg-white py-5 ">
+      <div className="max-w-[1380]  mx-auto lg:pt-30 p-5 lg:p-0">
         <div className="">
           <Link href="/Product">
             <div className="flex items-center  justify-between text-center relative">

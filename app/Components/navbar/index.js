@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#345BA2] fixed z-20 top-0 start-0 w-full">
-      <div className="flex max-w-[1440px] mx-auto justify-between items-center p-4">
+      <div className="flex max-w-[1380px] mx-auto justify-between items-center p-4">
         <Link href="/">
           <img
             src="/image/nav-logo.svg"

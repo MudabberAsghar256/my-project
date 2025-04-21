@@ -7,10 +7,14 @@ export default function Navbar3() {
     <nav>
       <div className="w-full">
         <nav className="bg-white fixed w-full z-20 top-0 start-0 shadow-lg ">
-          <div className="max-w-[1350px] flex flex-wrap items-center justify-between mx-auto p-4 ">
-            <img src="/image/nav-logo2.svg" className="lg:h-15 " alt="Logo" />
+          <div className="max-w-[1440px] mx-auto  flex flex-wrap items-center justify-between p-5 mp-4 ">
+            <img
+              src="/image/nav-logo2.svg"
+              className="lg:h-[51px] lg:w-[78px] w-[77px] h-[50px] "
+              alt="Logo"
+            />
             <div className="flex md:order-2 lg:gap-5 space-x-3 md:space-x-0">
-              <div className="hidden md:block text-[#235CA8] text-lg/4 font-bold  text-right  ">
+              <div className="hidden md:block text-[#235CA8] text-lg/4 font-bold  text-right   lg:w-[103px] lg:h-[57px]  ">
                 Innovation
                 <br /> <span className="text-[#27A7DF]">
                   through
@@ -39,17 +43,26 @@ export default function Navbar3() {
             >
               <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
                 <li>
-                  <Link href="/" className="block py-2 px-3 text-black">
+                  <Link
+                    href="/"
+                    className="block py-2 px-3 text-black lg:text-[16px]"
+                  >
                     About Azelis
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Explore" className="block py-2 px-3 text-black">
+                  <Link
+                    href="/Explore"
+                    className="block py-2 px-3 text-black lg:text-[16px]"
+                  >
                     Explore All
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="block py-2 px-3 text-black">
+                  <Link
+                    href="/services"
+                    className="block py-2 px-3 text-black lg:text-[16px]"
+                  >
                     Contact
                   </Link>
                 </li>

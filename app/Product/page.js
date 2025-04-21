@@ -29,7 +29,7 @@ export default function Product() {
       <div className="relative">
         {/* <Navbar3 /> */}
 
-        <div className="max-w-[1390px] mx-auto w-full grid grid-cols-1 md:grid-cols-10 lg:pt-30 pt-24">
+        <div className="max-w-[1380px] mx-auto w-full grid grid-cols-1 md:grid-cols-10 lg:pt-30 pt-24">
           <div className="h-full col-span-4">
             <Link href="/Sportlight">
               <div className="items-center justify-between text-center hidden md:block pb-4">

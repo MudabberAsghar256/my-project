@@ -42,7 +42,7 @@ export default function Homepage() {
           <div className="lg:text-[42px] text-[25px] ">to life</div>
         </div>
 
-        <div className=" lg:pt-30 pt-23 max-w-[1440px] mx-auto  bg-white ">
+        <div className=" lg:pt-30 pt-23 max-w-[1380px] mx-auto  bg-white ">
           <div className="  pt-3 p-5 xl:p-0 ">
             <div className="justify-center bg-white items-center text-center  lg:pb-[24px] pb-[20px]  font-bold lg:text-[24px] text-[18px] text-black">
               Choose Your Zone
