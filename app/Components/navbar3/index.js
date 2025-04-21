@@ -1,8 +1,12 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
+
 export default function Navbar3() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
   return (
     <nav>
       <div className="w-full">
@@ -42,30 +46,24 @@ export default function Navbar3() {
               } w-full md:flex md:w-auto md:order-1`}
             >
               <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
-                <li>
-                  <Link
-                    href="/"
-                    className="block py-2 px-3 text-black lg:text-[16px]"
-                  >
-                    About Azelis
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/Explore"
-                    className="block py-2 px-3 text-black lg:text-[16px]"
-                  >
-                    Explore All
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services"
-                    className="block py-2 px-3 text-black lg:text-[16px]"
-                  >
-                    Contact
-                  </Link>
-                </li>
+                {[
+                  { name: "About Azelis", href: "/" },
+                  { name: "Explore All", href: "/Explore" },
+                  { name: "Contact", href: "/services" },
+                ].map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className={`block py-2 px-3 lg:text-[16px] ${
+                        pathname === item.href
+                          ? "text-[#265BA7] font-bold"
+                          : "text-black"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
 
                 <li className="sm:block md:hidden">
                   <button
