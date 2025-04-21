@@ -7,11 +7,13 @@ export default function Product1({ image, title, tag, description }) {
         alt={title}
       />
       <div>
-        <h1 className="font-bold">{title}</h1>
+        <h1 className="font-bold text-black">{title}</h1>
         <h1 className="mt-1 bg-[#2AA7DF] w-22 p-1 text-[12px] text-white rounded-[6px]">
           {tag}
         </h1>
-        <p className="lg:text-[15px] text-[10px] pt-1">{description}</p>
+        <p className="lg:text-[15px] text-[10px] pt-1 text-gray-400">
+          {description}
+        </p>
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
-import Navbar from "../navbar";
-export const MainComponents = ({ children }) => {
-  return (
-    <div className="w-full ">
-      <Navbar />
-      <div className="pt-[70px] bg-white  w-full ">{children}</div>
-    </div>
-  );
-};
+// import Navbar from "../navbar";
+// export const MainComponents = ({ children }) => {
+//   return (
+//     <div className="w-full ">
+//       <Navbar />
+//       <div className=" bg-white  max:w-[1320px] ">{children}</div>
+//     </div>
+//   );
+// };

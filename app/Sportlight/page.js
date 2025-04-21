@@ -11,15 +11,15 @@ export default function Sportlight() {
       "Unveil new product formulations and cutting-edge beauty concepts.",
   }));
   return (
-    <div>
-      <Navbar2 />
+    <div className=" bg-white   ">
+      {/* <Navbar2 /> */}
       <div
-        className="w-full max-w-7xl h-[300px] mx-auto rounded-b-full "
+        className="w-full  lg:h-[300px] h-[220px] mx-auto rounded-b-full"
         style={{
-          background: "radial-gradient(circle at center, #fff7e6, #ffffff)",
+          background: "radial-gradient(circle at center, #F9B41826, #ffffff)",
         }}
       >
-        <div className="relative text-black">
+        <div className="relative text-black ">
           <div className="absolute inset-0 flex justify-center items-center text-center text-white ">
             <div className=" justify-center items-center text-center text-black pt-100 lg:pt-115 lg:p-0 p-4">
               <div className="flex pt-5 justify-center items-center text-center ">
@@ -32,10 +32,10 @@ export default function Sportlight() {
                 </Link>
                 <img className="mx-auto lg:pt-5" src="/image/frame-logo4.svg" />
               </div>
-              <h1 className="font-bold lg:text-[28px] text-[18px] pt-3 ">
+              <h1 className="font-bold lg:text-[24px] ml-5 lg:ml-0 text-[16px] pt-1 ">
                 Spotlight on Science
               </h1>
-              <p className="pt-3 lg:text-[18px] lg:w-[50%] mx-auto text-[12px] text-ellipsis">
+              <p className="pt-1 lg:text-[16px] lg:w-[50%] mx-auto text-[14px] text-ellipsis">
                 Lorem ipsum dolor sit amet consectetur. Amet sagittis sociis
                 risus lorem sem ipsum. In pharetra morbi vestibulum faucibus
                 praesent lobortis sed. Pharetra ornare purus feugiat libero.
@@ -44,7 +44,7 @@ export default function Sportlight() {
             </div>
           </div>
         </div>
-        <div className="max-w-screen-xl mx-auto pt-80 lg:pt-100 p-5 lg:p-0  ">
+        <div className=" max-w-[1440px] mx-auto  pt-80 lg:pt-100 p-5 lg:p-0  ">
           <Link href="/Catalog">
             <div className="flex items-center justify-between text-center relative">
               <div className="flex items-center gap-2 pt-0 absolute left-0">
@@ -57,13 +57,13 @@ export default function Sportlight() {
                 <h1 className="text-black text-[16px] hidden md:block">Back</h1>
               </div>
 
-              <div className="mx-auto text-black lg:text-[24px] text-[20px] font-semibold">
+              <div className="mx-auto text-black lg:text-[24px] text-[18px] font-semibold">
                 Products
               </div>
             </div>
           </Link>
           <Link href="/Product">
-            <div className="lg:pt-10 pt-5">
+            <div className="lg:pt-10 pt-3 ">
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
                 {products.map((product) => (
                   <div key={product.id} className="flex flex-col gap-3 ">
