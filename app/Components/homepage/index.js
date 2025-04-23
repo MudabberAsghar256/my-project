@@ -48,14 +48,17 @@ export default function Homepage() {
               Choose Your Zone
             </div>
             <div className="main grid sm:grid-cols-1 lg:grid-cols-2 lg:gap-[24px] gap-[16px]">
-              <div className="child-1 border-2 border-blue-200  lg:p-6 p-5 rounded-[16px] bg-[#A2BADE14] shadow-lg">
+              <div className="child-1 xl:w-[640px] xl:h-[203px] border-2 border-blue-200  lg:p-6 p-5 rounded-[16px] bg-[#A2BADE14] shadow-lg">
                 <div className="md:block flex gap-[6px]">
                   <div className="flex justify-between">
-                    <img
-                      src="/image/home-logo1.svg"
-                      alt="Concept Formulations"
-                    />
-                    <Link href="/">
+                    <Link href="/Catalog">
+                      <img
+                        src="/image/home-logo1.svg"
+                        className="lg:w-[77px] lg:h-[77px]"
+                        alt="Concept Formulations"
+                      />
+                    </Link>
+                    <Link href="/Catalog">
                       <img
                         className="hidden md:block"
                         src="/image/home-logo3.svg"
@@ -69,7 +72,7 @@ export default function Homepage() {
                         Concept Formulations
                       </h2>
                     </Link>
-                    <p className="text-gray-600 lg:text-[16px] text-[12px] pt-[3px]">
+                    <p className="text-[#757575] lg:text-[16px] text-[12px] pt-[3px]">
                       Unveil new product formulations and cutting-edge beauty
                       concepts.
                     </p>
@@ -77,10 +80,14 @@ export default function Homepage() {
                 </div>
               </div>
 
-              <div className="child-2 border-2 border-blue-200 lg:p-6 p-5 rounded-[16px] bg-[#A2BADE14] shadow-lg">
+              <div className="child-2 xl:w-[640px]  xl:h-[203px] border-2 border-blue-200 lg:p-6 p-5 rounded-[16px] bg-[#A2BADE14] shadow-lg">
                 <div className="md:block flex gap-[6px]">
                   <div className="flex justify-between">
-                    <img src="/image/home-logo2.svg" alt="Sensory Bar" />
+                    <img
+                      src="/image/home-logo2.svg"
+                      className="lg:w-[77px] lg:h-[77px]"
+                      alt="Sensory Bar"
+                    />
                     <Link href="/">
                       <img
                         className="hidden md:block"
@@ -93,7 +100,7 @@ export default function Homepage() {
                     <h2 className="font-bold lg:pt-3 text-black  text-[16px] lg:text-[20px]">
                       Sensory Bar
                     </h2>
-                    <p className="text-gray-600 lg:text-[16px] text-[12px] pt-[3px]">
+                    <p className="text-[#757575] lg:text-[16px] text-[12px] pt-[3px]">
                       Engage your senses with our experiences featuring and
                       sound.
                     </p>

@@ -8,11 +8,13 @@ export default function Navbar2() {
       <div className="w-full">
         <nav className="bg-transperent fixed w-full z-20 top-0 start-0 ">
           <div className="max-w-[1320px] mx-auto flex flex-wrap items-center justify-between p-4">
-            <img
-              src="/image/nav-logo2.svg"
-              className="lg:h-[51px] lg:w-[78px] w-[77px] h-[50px] "
-              alt="Logo"
-            />
+            <Link href="/">
+              <img
+                src="/image/nav-logo2.svg"
+                className="lg:h-[51px] lg:w-[78px] w-[77px] h-[50px] "
+                alt="Logo"
+              />
+            </Link>
             <div className="flex md:order-2 lg:gap-5 space-x-3 md:space-x-0">
               <div className="hidden md:block text-[#235CA8] text-lg/4  text-right  lg:w-[103px] lg:h-[57px] ">
                 Innovation

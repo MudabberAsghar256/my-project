@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import Navbar3 from "../Components/navbar3";
-
 export default function Product() {
   const images = [
     "/image/product-main.svg",
@@ -18,17 +16,14 @@ export default function Product() {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
   return (
-    <div className="relative  w-full bg-white lg:bg-[linear-gradient(to_right,_#F8FAFD_41%,_white_30%)]">
+    <div className="relative md:p-5  w-full bg-white lg:bg-[linear-gradient(to_right,_#F8FAFD_41%,_white_30%)]">
       <img
         src="/image/background-logo.svg"
         alt="Background Logo"
-        className="absolute top-0 right-0 lg:w-[430px] lg:block hidden 
+        className="absolute top-0 right-0 xl:w-[500px] xl:h-[516px] lg:block hidden 
 "
       />
-
       <div className="relative">
-        {/* <Navbar3 /> */}
-
         <div className="max-w-[1320px] mx-auto w-full grid grid-cols-1 md:grid-cols-10 lg:pt-30 pt-24">
           <div className="h-full col-span-4">
             <Link href="/Sportlight">
@@ -39,11 +34,11 @@ export default function Product() {
                     src="/image/righttick-img1.svg"
                     alt="Tick Icon"
                   />
-                  <h1 className="text-black text-[16px]">Back</h1>
+                  <h1 className="text-[#265BA7] text-[16px]">Back</h1>
                 </div>
               </div>
             </Link>
-            <div className="relative lg:w-[494px] lg:h-[447px] h-[250px]">
+            <div className="relative xl:w-[494px] xl:h-[447px] h-[250px]">
               <img
                 src={images[currentIndex]}
                 alt="Product"
@@ -124,7 +119,7 @@ export default function Product() {
               <h2 className="lg:text-[32px] text-[24px] font-bold text-blue-900 lg:mb-4">
                 Name of Product
               </h2>
-              <p className="text-gray-600 lg:text-[15px] mb-4 lg:w-[530px] ">
+              <p className="text-gray-600 lg:text-[15px] lg:mb-4 lg:w-[530px] ">
                 Lorem ipsum dolor sit amet consectetur. Amet sagittis sociis
                 risus lorem sem ipsum. In pharetra morbi vestibulum faucibus
                 praesent lobortis sed.
@@ -152,7 +147,7 @@ export default function Product() {
             </h3>
             <div className="p-5 lg:p-0">
               <h3 className="text-[#7E7E7E] font-semibold ">BENEFITS</h3>
-              <p className="text-gray-600 mb-2">
+              <p className="text-gray-600 lg:mb-2">
                 Lorem ipsum dolor sit amet consectetur. Amet sagittis sociis
                 risus lorem sem ipsum. In pharetra morbi vestibulum faucibus
                 praesent lobortis sed. Lorem ipsum dolor sit amet consectetur.
@@ -163,14 +158,14 @@ export default function Product() {
               <h3 className="text-[#7E7E7E] font-semibold pt-3 ">
                 ACHIEVEMENTS
               </h3>
-              <p className="text-gray-600 mb-2">
+              <p className="text-gray-600 lg:mb-2">
                 Lorem ipsum dolor sit amet consectetur. Amet sagittis sociis
                 risus lorem sem ipsum. In pharetra morbi vestibulum faucibus
                 praesent lobortis sed. Lorem ipsum dolor sit amet consectetur.
                 Amet sagittis sociis risus lorem sem ipsum. In pharetra morbi
                 vestibulum faucibus praesent lobortis sed.
               </p>
-              <button className="bg-[#265BA7] mt-3 text-white w-full lg:w-auto px-6 py-2 rounded hover:bg-blue-700 transition">
+              <button className="bg-[#265BA7] mt-3 text-white text-[16px] w-full py-[7px] lg:w-[121px] lg:h-[42px]   rounded-[8px] hover:bg-blue-700 transition">
                 More Details
               </button>
             </div>

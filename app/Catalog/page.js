@@ -38,7 +38,7 @@ export default function Catalog() {
           <h1 className="lg:text-[42px] lg:mr-15 mr-12 text-[25px]  lg:pt-40 pt-30">
             Azelis brings
           </h1>
-          <div className="lg:ml-40 ml-20 text-[#2AA7DF] lg:text-[42px] text-[25px] ">
+          <div className="lg:ml-45 ml-20 text-[#2AA7DF] lg:text-[42px] text-[25px] ">
             <span className="font-bold">Your</span> ideas
           </div>
           <div className="lg:text-[42px] text-[25px] ">to life</div>
@@ -46,25 +46,28 @@ export default function Catalog() {
 
         <div className="max-w-[1320px] mx-auto lg:pt-20 pt-5 bg-white">
           <div className="  pt-3 p-5  xl:p-0 ">
-            <Link href="/">
-              <div className="flex items-center justify-between text-center relative pb-[20px] lg:pt-10 pt-20">
-                <div className="flex items-center gap-2 pt-0 absolute left-0">
-                  <img
-                    className="w-[22px] h-[22px]"
-                    src="/image/righttick-img1.svg"
-                    alt="Tick Icon"
-                  />
+            <div className="flex items-center justify-between text-center relative pb-[20px] lg:pt-10 pt-20">
+              <div className="flex items-center pt-0 absolute left-0">
+                <Link href="/">
+                  <div className="flex gap-2">
+                    <img
+                      className="w-[22px] h-[22px]"
+                      src="/image/righttick-img1.svg"
+                      alt="Tick Icon"
+                    />
 
-                  <h1 className="text-[#265BA7] text-[16px] hidden md:block">
-                    Back
-                  </h1>
-                </div>
-
-                <div className="mx-auto text-black lg:text-[24px] text-[15px] font-semibold">
-                  Choose Your Experience
-                </div>
+                    <h1 className="text-[#265BA7] text-[16px] hidden md:block">
+                      Back
+                    </h1>
+                  </div>
+                </Link>
               </div>
-            </Link>
+
+              <div className="mx-auto text-black lg:text-[24px] text-[15px] font-semibold">
+                Choose Your Experience
+              </div>
+            </div>
+
             <div className="">
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-4  lg:p-0 ">
                 <div className="relative w-full h-auto">

@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Navbar2 from "../Components/navbar2";
 import Product2 from "../Common/product2";
 export default function Sportlight() {
   const products = Array.from({ length: 6 }, (_, i) => ({
@@ -12,9 +11,8 @@ export default function Sportlight() {
   }));
   return (
     <div className=" bg-white   ">
-      {/* <Navbar2 /> */}
       <div
-        className="w-full  lg:h-[300px] h-[220px] mx-auto rounded-b-full"
+        className="w-full lg:h-[370px] h-[220px] mx-auto rounded-b-full"
         style={{
           background: "radial-gradient(circle at center, #F9B41826, #ffffff)",
         }}
@@ -44,29 +42,34 @@ export default function Sportlight() {
             </div>
           </div>
         </div>
-        <div className=" max-w-[1320px] mx-auto  pt-80 lg:pt-100 p-5 lg:p-0  ">
-          <Link href="/Catalog">
-            <div className="flex items-center justify-between text-center relative">
-              <div className="flex items-center gap-2 pt-0 absolute left-0">
-                <img
-                  className="w-6 h-6 hidden md:block"
-                  src="/image/righttick-img1.svg"
-                  alt="Tick Icon"
-                />
+        <div className=" max-w-[1320px] mx-auto   pt-80 lg:pt-100   p-5 lg:p-0.5  ">
+          <div className="flex items-center justify-between text-center relative">
+            <div className="flex items-center  pt-0 absolute left-0">
+              <Link href="/Catalog">
+                <div className="flex gap-2">
+                  <img
+                    className="w-6 h-6 hidden md:block"
+                    src="/image/righttick-img1.svg"
+                    alt="Tick Icon"
+                  />
 
-                <h1 className="text-black text-[16px] hidden md:block">Back</h1>
-              </div>
-
-              <div className="mx-auto text-black lg:text-[24px] text-[18px] font-semibold">
-                Products
-              </div>
+                  <h1 className="text-[#265BA7] text-[16px] hidden md:block">
+                    Back
+                  </h1>
+                </div>
+              </Link>
             </div>
-          </Link>
+
+            <div className="mx-auto text-black  lg:text-[24px] text-[18px] font-semibold">
+              Products
+            </div>
+          </div>
+
           <Link href="/Product">
             <div className="lg:pt-10 pt-3 ">
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[20px] gap-[16px]  ">
                 {products.map((product) => (
-                  <div key={product.id} className="flex flex-col gap-3 ">
+                  <div key={product.id} className="flex flex-col lg:gap-[20px] gap-[16px] ">
                     <Product2
                       image={product.image}
                       title={product.title}

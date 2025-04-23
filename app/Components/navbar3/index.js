@@ -10,15 +10,17 @@ export default function Navbar3() {
   return (
     <nav>
       <div className="w-full">
-        <nav className="bg-white fixed w-full z-20 top-0 start-0 shadow-lg ">
+        <nav className="bg-white fixed w-full z-20 top-0 start-0 lg:shadow-lg ">
           <div className="max-w-[1320px] mx-auto  flex flex-wrap items-center justify-between p-5 mp-4 ">
-            <img
-              src="/image/nav-logo2.svg"
-              className="lg:h-[51px] lg:w-[78px] w-[77px] h-[50px] "
-              alt="Logo"
-            />
+            <Link href="/">
+              <img
+                src="/image/nav-logo2.svg"
+                className="lg:h-[51px] lg:w-[78px] w-[77px] h-[50px] "
+                alt="Logo"
+              />
+            </Link>
             <div className="flex md:order-2 lg:gap-5 space-x-3 md:space-x-0">
-              <div className="hidden md:block text-[#235CA8] text-lg/4 font-bold  text-right   lg:w-[103px] lg:h-[57px]  ">
+              <div className="hidden md:block text-[#235CA8] text-lg/4 font-bold  text-right   lg:w-[103px] lg:h-[57px] ">
                 Innovation
                 <br /> <span className="text-[#27A7DF]">
                   through
