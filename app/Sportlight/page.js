@@ -69,7 +69,10 @@ export default function Sportlight() {
             <div className="lg:pt-10 pt-3 ">
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[20px] gap-[16px]  ">
                 {products.map((product) => (
-                  <div key={product.id} className="flex flex-col lg:gap-[20px] gap-[16px] ">
+                  <div
+                    key={product.id}
+                    className="flex flex-col lg:gap-[20px] gap-[16px] "
+                  >
                     <Product2
                       image={product.image}
                       title={product.title}

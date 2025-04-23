@@ -10,17 +10,17 @@ export default function Navbar3() {
   return (
     <nav>
       <div className="w-full">
-        <nav className="bg-white fixed w-full z-20 top-0 start-0 lg:shadow-lg ">
-          <div className="max-w-[1320px] mx-auto  flex flex-wrap items-center justify-between p-5 mp-4 ">
+        <nav className="bg-white fixed w-full z-20 top-0 start-0 lg:shadow-lg">
+          <div className="max-w-[1320px] mx-auto flex flex-wrap items-center justify-between p-5 mp-4">
             <Link href="/">
               <img
                 src="/image/nav-logo2.svg"
-                className="lg:h-[51px] lg:w-[78px] w-[77px] h-[50px] "
+                className="lg:h-[51px] lg:w-[78px] w-[77px] h-[50px]"
                 alt="Logo"
               />
             </Link>
             <div className="flex md:order-2 lg:gap-5 space-x-3 md:space-x-0">
-              <div className="hidden md:block text-[#235CA8] text-lg/4 font-bold  text-right   lg:w-[103px] lg:h-[57px] ">
+              <div className="hidden md:block text-[#235CA8] text-lg/4 font-bold text-right lg:w-[103px] lg:h-[57px]">
                 Innovation
                 <br /> <span className="text-[#27A7DF]">
                   through
@@ -29,12 +29,12 @@ export default function Navbar3() {
 
               <button
                 type="button"
-                className="inline-flex items-center p-2  justify-center text-sm text-white rounded-lg md:hidden"
+                className="inline-flex items-center p-2 justify-center text-sm text-white rounded-lg md:hidden"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-expanded={isMenuOpen}
               >
                 <span className="sr-only">Open main menu</span>
-                <div className=" text-[#235CA8] text-right text-lg/4">
+                <div className="text-[#235CA8] text-right text-lg/4">
                   Innovation
                   <br /> <span className="text-[#27A7DF]">
                     through
@@ -56,10 +56,10 @@ export default function Navbar3() {
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className={`block py-2 px-3 lg:text-[16px] ${
+                      className={`block py-2 px-3 lg:text-[16px] transition-colors duration-300 ${
                         pathname === item.href
                           ? "text-[#265BA7] font-bold"
-                          : "text-black"
+                          : "text-black hover:text-[#265BA7]"
                       }`}
                     >
                       {item.name}

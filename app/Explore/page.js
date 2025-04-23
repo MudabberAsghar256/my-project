@@ -3,30 +3,42 @@ import Link from "next/link";
 
 import Product1 from "../Common/product1";
 const tagOptions = [
-  { tag: "Mild & Mighty", tagColor: "bg-[#26BAAC] w-[85px] h-[26px]  p-1" },
+  {
+    tag: "Mild & Mighty",
+    tagColor: "bg-[#26BAAC] pl-2 w-[87px] h-[26px]  p-1",
+  },
   {
     tag: "Spotlight on Science",
-    tagColor: "bg-[#F9B418] w-[122px] h-[26px] p-1",
+    tagColor: "bg-[#F9B418] pl-2 w-[125px] h-[26px] p-1",
   },
-  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF] w-[70px] h-[26px] p-1" },
-  { tag: "Mild & Mighty", tagColor: "bg-[#26BAAC] w-[85px] h-[26px]  p-1" },
+  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF] pl-2 w-[73px] h-[26px] p-1" },
+  {
+    tag: "Mild & Mighty",
+    tagColor: "bg-[#26BAAC] pl-2 w-[87px] h-[26px]  p-1",
+  },
   {
     tag: "Spotlight on Science",
-    tagColor: "bg-[#F9B418]  w-[122px] h-[26px]  p-1",
+    tagColor: "bg-[#F9B418] pl-2 w-[125px] h-[26px]  p-1",
   },
-  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF] w-[70px] h-[26px] p-1" },
-  { tag: "Mild & Mighty", tagColor: "bg-[#26BAAC] w-[85px] h-[26px]  p-1" },
+  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF]  pl-2 w-[73px] h-[26px] p-1" },
+  {
+    tag: "Mild & Mighty",
+    tagColor: "bg-[#26BAAC] pl-2 w-[87px] h-[26px]  p-1",
+  },
   {
     tag: "Spotlight on Science",
-    tagColor: "bg-[#F9B418] w-[122px] h-[26px]  p-1",
+    tagColor: "bg-[#F9B418] pl-2 w-[125px] h-[26px]  p-1",
   },
-  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF]  w-[70px] h-[26px] p-1" },
-  { tag: "Mild & Mighty", tagColor: "bg-[#26BAAC]  w-[85px] h-[26px]  p-1" },
+  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF]  pl-2 w-[73px] h-[26px] p-1" },
+  {
+    tag: "Mild & Mighty",
+    tagColor: "bg-[#26BAAC] pl-2 w-[87px] h-[26px]  p-1",
+  },
   {
     tag: "Spotlight on Science",
-    tagColor: "bg-[#F9B418] w-[122px] h-[26px]  p-1",
+    tagColor: "bg-[#F9B418] pl-2 w-[125px] h-[26px]  p-1",
   },
-  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF] w-[70px] h-[26px] p-1" },
+  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF]  pl-2 w-[73px] h-[26px] p-1" },
 ];
 const products = Array.from({ length: 12 }, (_, i) => ({
   id: i,
@@ -63,7 +75,7 @@ export default function Explore() {
         </div>
 
         <div className="lg:p-0 mt-0 lg:mt-5 ">
-          <div className="text-[#7E7E7E] pb-3 lg:text-[20px] text-[16px] lg:text-left text-center pt-3  ">
+          <div className="text-[#7E7E7E] pb-3 lg:text-[20px] text-[16px] lg:text-left text-center pt-3 font-semibold  ">
             Skin Care (9)
           </div>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -77,7 +89,7 @@ export default function Explore() {
                   description={product.description}
                 />
                 {index === 3 && (
-                  <div className="text-[#7E7E7E] lg:text-left lg:text-[20px] text-[16px] text-center">
+                  <div className="text-[#7E7E7E] font-semibold lg:text-left lg:text-[20px] text-[16px] text-center">
                     Cosmetics (6)
                   </div>
                 )}

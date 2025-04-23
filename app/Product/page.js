@@ -24,7 +24,7 @@ export default function Product() {
 "
       />
       <div className="relative">
-        <div className="max-w-[1320px] mx-auto w-full grid grid-cols-1 md:grid-cols-10 lg:pt-30 pt-24">
+        <div className="max-w-[1320px] mx-auto w-full grid grid-cols-1 md:grid-cols-10 lg:pt-27 pt-24">
           <div className="h-full col-span-4">
             <Link href="/Sportlight">
               <div className="items-center justify-between text-center hidden md:block pb-4">
@@ -38,11 +38,11 @@ export default function Product() {
                 </div>
               </div>
             </Link>
-            <div className="relative xl:w-[494px] xl:h-[447px] h-[250px]">
+            <div className="relative xl:w-[494px]  xl:h-[447px] w-auto h-[401px]">
               <img
                 src={images[currentIndex]}
                 alt="Product"
-                className="w-full h-full object-cover lg:rounded-[8px]"
+                className="w-full h-full  object-cover lg:rounded-[8px]"
               />
 
               <Link href="/Sportlight">
