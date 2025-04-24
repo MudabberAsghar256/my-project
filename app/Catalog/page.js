@@ -44,9 +44,9 @@ export default function Catalog() {
           <div className="lg:text-[42px] text-[25px] ">to life</div>
         </div>
 
-        <div className="max-w-[1320px] mx-auto lg:pt-20 pt-5 bg-white">
+        <div className="max-w-[1320px] mx-auto pb-[60px] lg:pb-0 lg:pt-20 pt-5 bg-white">
           <div className="  pt-3 p-5  xl:p-0 ">
-            <div className="flex items-center justify-between text-center relative pb-[20px] lg:pt-10 pt-20">
+            <div className="flex items-center justify-between text-center relative pb-[20px] lg:pt-10 pt-15">
               <div className="flex items-center pt-0 absolute left-0">
                 <Link href="/">
                   <div className="flex gap-2">

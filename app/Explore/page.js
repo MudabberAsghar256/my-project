@@ -53,7 +53,7 @@ const products = Array.from({ length: 12 }, (_, i) => ({
 export default function Explore() {
   return (
     <div className="bg-white py-5 ">
-      <div className="max-w-[1320]  mx-auto  p-5 xl:p-0">
+      <div className="max-w-[1320]  mx-auto pb-[10px] p-5 xl:p-0">
         <div className="">
           <Link href="/Product">
             <div className="flex items-center lg:pt-25  justify-between text-center relative">
@@ -78,7 +78,7 @@ export default function Explore() {
           <div className="text-[#7E7E7E] pb-3 lg:text-[20px] text-[16px] lg:text-left text-center pt-3 font-semibold  ">
             Skin Care (9)
           </div>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[20px] gap-[8px]">
             {products.map((product, index) => (
               <div key={product.id} className="flex flex-col gap-3 ">
                 <Product1

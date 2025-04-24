@@ -42,7 +42,7 @@ export default function Sportlight() {
             </div>
           </div>
         </div>
-        <div className=" max-w-[1320px] mx-auto   pt-80 lg:pt-100   p-5 lg:p-0.5  ">
+        <div className=" max-w-[1320px] mx-auto pb-[70px]  pt-80 lg:pt-100   p-5 lg:p-0.5  ">
           <div className="flex items-center justify-between text-center relative">
             <div className="flex items-center  pt-0 absolute left-0">
               <Link href="/Catalog">
@@ -67,7 +67,7 @@ export default function Sportlight() {
 
           <Link href="/Product">
             <div className="lg:pt-10 pt-3 ">
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[20px] gap-[16px]  ">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[20px] gap-[8px]  ">
                 {products.map((product) => (
                   <div
                     key={product.id}
