@@ -3,7 +3,6 @@ import "./globals.css";
 import NavbarWrapper from "./Components/Navbarwrape";
 import BottomNavbar from "./Components/BottomNavbar";
 import AppHeightWrapper from "./AppHeightWrapper";
-// 👈 Import the new wrapper
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -24,7 +24,7 @@ export default function Product() {
 "
       />
       <div className="relative">
-        <div className="max-w-[1320px] mx-auto pb-[10px] lg:pb-0 w-full grid grid-cols-1 md:grid-cols-10 lg:pt-27 pt-24">
+        <div className="max-w-[1320px] mx-auto  w-full grid grid-cols-1 md:grid-cols-10 lg:pt-25 pt-24">
           <div className="h-full col-span-4">
             <Link href="/Sportlight">
               <div className="items-center justify-between text-center hidden md:block pb-4">
@@ -54,18 +54,14 @@ export default function Product() {
                   />
                 </div>
               </Link>
-              <div className="mt-4 md:hidden block top-1/2 left-2 lg:ml-12 transform -translate-y-3/2  r p-2  overflow-x-auto lg:w-[400px]">
-                <div className="flex gap-2">
+              <div className="mt-4 md:hidden block top-1/2  transform -translate-y-3/2  r p-2  overflow-x-auto lg:w-[400px]">
+                <div className="flex gap-2 justify-center items-center">
                   {images.map((img, index) => (
                     <img
                       key={index}
                       src={img}
                       onClick={() => setCurrentIndex(index)}
-                      className={`w-20 h-20 object-cover rounded cursor-pointer border ${
-                        currentIndex === index
-                          ? "border-2 border-blue-500"
-                          : "border-gray-300"
-                      }`}
+                      className={`w-20 h-20 object-cover rounded cursor-pointer `}
                       alt={`Thumbnail ${index + 1}`}
                     />
                   ))}
@@ -102,11 +98,7 @@ export default function Product() {
                     key={index}
                     src={img}
                     onClick={() => setCurrentIndex(index)}
-                    className={`w-20 h-20 object-cover rounded cursor-pointer border ${
-                      currentIndex === index
-                        ? "border-2 border-blue-500"
-                        : "border-gray-300"
-                    }`}
+                    className={`w-20 h-20 object-cover rounded cursor-pointer `}
                     alt={`Thumbnail ${index + 1}`}
                   />
                 ))}
@@ -165,7 +157,7 @@ export default function Product() {
                 Amet sagittis sociis risus lorem sem ipsum. In pharetra morbi
                 vestibulum faucibus praesent lobortis sed.
               </p>
-              <button className="bg-[#265BA7] mt-3 text-white text-[16px] w-full py-[7px] lg:w-[121px] lg:h-[42px]   rounded-[8px] hover:bg-blue-700 transition">
+              <button className="bg-[#265BA7] mb-3 lg:mb-0 mt-3 text-white text-[16px] w-full py-[7px] lg:w-[121px] lg:h-[42px]   rounded-[8px] hover:bg-blue-700 transition">
                 More Details
               </button>
             </div>

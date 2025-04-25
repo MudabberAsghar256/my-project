@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import Product2 from "../Common/product2";
-export default function Sportlight() {
+
+export default function Spotlight() {
   const products = Array.from({ length: 6 }, (_, i) => ({
     id: i,
     image: "/image/mdm-img.svg",
@@ -9,42 +10,40 @@ export default function Sportlight() {
     description:
       "Unveil new product formulations and cutting-edge beauty concepts.",
   }));
+
   return (
-    <div className=" bg-white   ">
+    <div className="relative bg-white overflow-hidden">
       <div
-        className="w-full lg:h-[370px] h-[220px] mx-auto rounded-b-full"
-        style={{
-          background: "radial-gradient(circle at center, #F9B41826, #ffffff)",
-        }}
-      >
-        <div className="relative text-black ">
-          <div className="absolute inset-0 flex justify-center items-center text-center text-white ">
-            <div className=" justify-center items-center text-center text-black pt-100 lg:pt-115 lg:p-0 p-4">
-              <div className="flex pt-5 justify-center items-center text-center ">
-                <Link href="/Catalog">
-                  <img
-                    className="w-6 h-6 sm:hidden block"
-                    src="/image/righttick-img1.svg"
-                    alt="Tick Icon"
-                  />
-                </Link>
-                <img className="mx-auto lg:pt-5" src="/image/frame-logo4.svg" />
-              </div>
-              <h1 className="font-bold lg:text-[24px] ml-5 lg:ml-0 text-[16px] pt-1 ">
-                Spotlight on Science
-              </h1>
-              <p className="pt-1 lg:text-[16px] lg:w-[50%] mx-auto text-[14px] text-ellipsis">
-                Lorem ipsum dolor sit amet consectetur. Amet sagittis sociis
-                risus lorem sem ipsum. In pharetra morbi vestibulum faucibus
-                praesent lobortis sed. Pharetra ornare purus feugiat libero.
-                Vestibulum viverra sed malesuada arcu in.
-              </p>
-            </div>
+        className="absolute top-[-127px] left-1/2 -translate-x-1/2 w-[1048px] h-[370px] rounded-full blur-[100px] opacity-[0.15] z-0"
+        style={{ background: "#F9B418" }}
+      ></div>
+
+      <div className="relative z-10">
+        <div className="text-black text-center px-4 pt-32 lg:pt-40">
+          <div className="flex justify-center items-center">
+            <Link href="/Catalog">
+              <img
+                className="w-6 h-6 sm:hidden block"
+                src="/image/righttick-img1.svg"
+                alt="Tick Icon"
+              />
+            </Link>
+            <img className="mx-auto lg:pt-5" src="/image/frame-logo4.svg" />
           </div>
+          <h1 className="font-bold lg:text-[24px] text-[16px] pt-2">
+            Spotlight on Science
+          </h1>
+          <p className="pt-2 lg:text-[16px] text-[14px] lg:w-1/2 mx-auto">
+            Lorem ipsum dolor sit amet consectetur. Amet sagittis sociis risus
+            lorem sem ipsum. In pharetra morbi vestibulum faucibus praesent
+            lobortis sed. Pharetra ornare purus feugiat libero. Vestibulum
+            viverra sed malesuada arcu in.
+          </p>
         </div>
-        <div className=" max-w-[1320px] mx-auto pb-[70px]  pt-80 lg:pt-100   p-5 lg:p-0.5  ">
+
+        <div className="max-w-[1320px] mx-auto pb-[30px] pt-16 px-4 lg:px-0">
           <div className="flex items-center justify-between text-center relative">
-            <div className="flex items-center  pt-0 absolute left-0">
+            <div className="flex items-center absolute left-0">
               <Link href="/Catalog">
                 <div className="flex gap-2">
                   <img
@@ -52,33 +51,27 @@ export default function Sportlight() {
                     src="/image/righttick-img1.svg"
                     alt="Tick Icon"
                   />
-
                   <h1 className="text-[#265BA7] text-[16px] hidden md:block">
                     Back
                   </h1>
                 </div>
               </Link>
             </div>
-
-            <div className="mx-auto text-black  lg:text-[24px] text-[18px] font-semibold">
+            <div className="mx-auto text-black lg:text-[24px] text-[18px] font-semibold">
               Products
             </div>
           </div>
 
           <Link href="/Product">
-            <div className="lg:pt-10 pt-3 ">
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[20px] gap-[8px]  ">
+            <div className="pt-7">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
                 {products.map((product) => (
-                  <div
+                  <Product2
                     key={product.id}
-                    className="flex flex-col lg:gap-[20px] gap-[16px] "
-                  >
-                    <Product2
-                      image={product.image}
-                      title={product.title}
-                      description={product.description}
-                    />
-                  </div>
+                    image={product.image}
+                    title={product.title}
+                    description={product.description}
+                  />
                 ))}
               </div>
             </div>

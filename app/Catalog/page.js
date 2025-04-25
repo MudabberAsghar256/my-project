@@ -25,7 +25,7 @@ export default function Catalog() {
           top: 0,
           clipPath:
             windowWidth >= 1024
-              ? "ellipse(80% 80%  at 31% 8%)"
+              ? "ellipse(80% 80%  at 35% 8%)"
               : windowWidth >= 640
               ? "ellipse(89% 60% at 32% 4%)"
               : "ellipse(100% 100% at 31% 0%)",
@@ -34,19 +34,19 @@ export default function Catalog() {
       ></div>
 
       <div className="sm:mb- m-auto  sm:h-[380px] h-[250px] bg-white ">
-        <div className="relative text-white justify-center items-center text-center text-base/7 lg:text-base/10 ">
+        <div className="relative text-white space-y-[10px]  lg:mr-[80px] justify-center items-center text-center text-base/7 lg:text-base/10 ">
           <h1 className="lg:text-[42px] lg:mr-15 mr-12 text-[25px]  lg:pt-40 pt-30">
             Azelis brings
           </h1>
-          <div className="lg:ml-45 ml-20 text-[#2AA7DF] lg:text-[42px] text-[25px] ">
+          <div className="lg:ml-40 ml-20 text-[#2AA7DF] lg:text-[42px] text-[25px] ">
             <span className="font-bold">Your</span> ideas
           </div>
-          <div className="lg:text-[42px] text-[25px] ">to life</div>
+          <div className="lg:text-[42px] text-[25px] mr-[10px] ">to life</div>
         </div>
 
-        <div className="max-w-[1320px] mx-auto pb-[60px] lg:pb-0 lg:pt-20 pt-5 bg-white">
+        <div className="max-w-[1320px] mx-auto pb-[50px] lg:pb-0 lg:pt-20 pt-5 bg-white">
           <div className="  pt-3 p-5  xl:p-0 ">
-            <div className="flex items-center justify-between text-center relative pb-[20px] lg:pt-10 pt-15">
+            <div className="flex items-center justify-between text-center relative pb-[20px] lg:pt-7 pt-10">
               <div className="flex items-center pt-0 absolute left-0">
                 <Link href="/">
                   <div className="flex gap-2">
@@ -63,7 +63,7 @@ export default function Catalog() {
                 </Link>
               </div>
 
-              <div className="mx-auto text-black lg:text-[24px] text-[15px] font-semibold">
+              <div className="mx-auto text-black lg:text-[24px] lg:pr-[60px] text-[15px] font-semibold">
                 Choose Your Experience
               </div>
             </div>
@@ -139,11 +139,11 @@ export default function Catalog() {
                 </div>
               </div>
               <div className="grid sm:grid-cols-1  lg:grid-cols-2 lg:gap-6 gap-4 pb-5  lg:pt-6">
-                <div className="relative w-full h-auto lg:mt-0 mt-5 lg:h-[266px] rounded-[12px] overflow-hidden">
+                <div className="relative w-full  lg:mt-0 mt-5 lg:h-[266px] rounded-[12px] overflow-hidden">
                   <img
-                    src="/image/frame-img3.svg"
+                    src="/image/frame-img4.svg"
                     alt="Background"
-                    className="w-full h-auto lg:h-[266px] object-cover"
+                    className="w-full h-[210px]   md:h-auto lg:h-[266px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black " />
                   <div className="absolute lg:bottom-5 bottom-3 left-4 lg:left-6 text-white">
@@ -158,17 +158,17 @@ export default function Catalog() {
                       </h1>
                     </Link>
                     <p className="text-[14px] text-[#D4D4D4] leading-tight">
-                      A small two line description for the experience
-                      <br /> should go here.
+                      A small two line description for the experience should go
+                      here.
                     </p>
                   </div>
                 </div>
 
-                <div className="relative w-full lg:h-[266px] rounded-[12px] overflow-hidden">
+                <div className="relative w-full lg:h-[266px]  rounded-[12px] overflow-hidden">
                   <img
-                    src="/image/frame-img2.svg"
+                    src="/image/frame-img5.svg"
                     alt="Background"
-                    className="w-full lg:h-[266px] object-cover"
+                    className="w-full h-[210px]   md:h-auto lg:h-[266px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
                   <div className="absolute lg:bottom-5 bottom-3 left-4 lg:left-6 text-white">
@@ -181,8 +181,8 @@ export default function Catalog() {
                       Playful Pop Glamour
                     </h1>
                     <p className="text-[14px] text-[#D4D4D4] leading-tight">
-                      A small two line description for the experience
-                      <br /> should go here.
+                      A small two line description for the experience should go
+                      here.
                     </p>
                   </div>
                 </div>
