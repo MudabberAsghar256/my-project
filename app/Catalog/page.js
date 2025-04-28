@@ -34,7 +34,7 @@ export default function Catalog() {
       ></div>
 
       <div className="sm:mb- m-auto  sm:h-[380px] h-[250px] bg-white ">
-        <div className="relative text-white space-y-[10px]  lg:mr-[80px] justify-center items-center text-center text-base/7 lg:text-base/10 ">
+        <div className="relative text-white lg:space-y-[10px]  lg:mr-[80px] justify-center items-center text-center text-base/7 lg:text-base/10 ">
           <h1 className="lg:text-[42px] lg:mr-15 mr-12 text-[25px]  lg:pt-40 pt-30">
             Azelis brings
           </h1>

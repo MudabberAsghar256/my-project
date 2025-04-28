@@ -46,22 +46,22 @@ export default function Product() {
               />
 
               <Link href="/Sportlight">
-                <div className="absolute top-4 left-4 md:hidden block">
+                <div className="absolute top-[50px] left-[25px] md:hidden block">
                   <img
-                    className="w-6 h-6"
+                    className="w-[25px] h-[25px]"
                     src="/image/righttick-img1.svg"
                     alt="Tick Icon"
                   />
                 </div>
               </Link>
-              <div className="mt-4 md:hidden block top-1/2  transform -translate-y-3/2  r p-2  overflow-x-auto lg:w-[400px]">
+              <div className="mt-4 md:hidden block top-1/2  transform -translate-y-3/2   p-2  overflow-x-auto lg:w-[400px]">
                 <div className="flex gap-2 justify-center items-center">
                   {images.map((img, index) => (
                     <img
                       key={index}
                       src={img}
                       onClick={() => setCurrentIndex(index)}
-                      className={`w-20 h-20 object-cover rounded cursor-pointer `}
+                      className={`w-[70px] h-[70px] object-cover rounded cursor-pointer `}
                       alt={`Thumbnail ${index + 1}`}
                     />
                   ))}
@@ -70,23 +70,23 @@ export default function Product() {
 
               <button
                 onClick={handlePrev}
-                className="absolute lg:top-1/2 md:top-2/4 top-2/5 left-2 transform -translate-y-1/2  r p-2"
+                className="absolute lg:top-1/2 md:top-2/4 top-[50%] left-2 transform -translate-y-1/2  r p-2"
               >
                 <img
                   src="/image/left-arow.svg"
                   alt="Left Arrow"
-                  className="w-7 h-7"
+                  className="w-[33px] h-[33px]"
                 />
               </button>
 
               <button
                 onClick={handleNext}
-                className="absolute lg:top-1/2 md:top-2/4 top-2/5 right-2 transform -translate-y-1/2  p-2"
+                className="absolute lg:top-1/2 md:top-2/4 top-[50%] right-2 transform -translate-y-1/2  p-2"
               >
                 <img
                   src="/image/right-arow.svg"
                   alt="Right Arrow"
-                  className="w-7 h-7"
+                  className="w-[33px] h-[33px]"
                 />
               </button>
             </div>
@@ -98,7 +98,7 @@ export default function Product() {
                     key={index}
                     src={img}
                     onClick={() => setCurrentIndex(index)}
-                    className={`w-20 h-20 object-cover rounded cursor-pointer `}
+                    className={`w-[70px] h-[70px] object-cover rounded cursor-pointer `}
                     alt={`Thumbnail ${index + 1}`}
                   />
                 ))}

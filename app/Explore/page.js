@@ -59,7 +59,7 @@ export default function Explore() {
             <div className="flex items-center lg:pt-25  justify-between text-center relative">
               <div className="flex items-center gap-2 pt-25 lg:pt-0 absolute left-0">
                 <img
-                  className="w-[41px] lg:w-[24px] lg:h-[24px] h-[41px]"
+                  className="w-[25px] h-[25px]"
                   src="/image/righttick-img1.svg"
                   alt="Tick Icon"
                 />

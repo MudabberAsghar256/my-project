@@ -3,8 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function BottomNavbar() {
-  const [activeTab, setActiveTab] = useState(null);
-
+  const [activeTab, setActiveTab] = useState("explore");
   const navItems = [
     {
       key: "about",
@@ -33,36 +32,38 @@ export default function BottomNavbar() {
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t-[3px] border-[#265BA7] rounded-t-2xl px-2 py-2 flex justify-center gap-4 text-sm sm:hidden z-50">
-      {navItems.map((item, index) => (
-        <div key={item.key} className="flex items-center ">
-          <Link
-            href={item.route}
-            onClick={() => setActiveTab(item.key)}
-            className="no-underline"
+    <div className="fixed bottom-0 left-0 right-0 bg-white border-t-[3px] border-[#265BA7] rounded-t-2xl px-2 py-2 grid grid-cols-3 text-sm sm:hidden z-50">
+      {activeTab !== "explore" && (
+        <>
+          <div className="absolute left-[35%] top-2 bottom-2 w-px bg-[#7DAAEB] z-0" />
+          <div className="absolute right-[35%] top-2  bottom-2 w-px bg-[#7DAAEB] z-0" />
+        </>
+      )}
+
+      {navItems.map((item) => (
+        <Link
+          key={item.key}
+          href={item.route}
+          onClick={() => setActiveTab(item.key)}
+          className="flex flex-col items-center justify-center  relative"
+        >
+          <div
+            className={`flex flex-col items-center justify-center w-full py-2 px-2 rounded-[12px] transition ${
+              activeTab === item.key
+                ? "bg-[#265BA7] text-white"
+                : "text-[#265BA7]"
+            }`}
           >
-            <div
-              onClick={() => setActiveTab(item.key)}
-              className={`flex flex-col items-center px-2 pr-[14px] py-2  rounded-[12px] cursor-pointer ${
-                activeTab === item.key
-                  ? "bg-[#265BA7]  text-white"
-                  : "text-[#265BA7]"
-              }`}
-            >
-              <img
-                src={
-                  activeTab === item.key ? item.activeIcon : item.defaultIcon
-                }
-                alt={item.label}
-                className={`${item.iconSize} mb-1`}
-              />
-              <span className="text-[16px] font-medium">{item.label}</span>
-            </div>
-          </Link>
-          {index !== navItems.length - 1 && (
-            <div className="h-10 w-px bg-[#7DAAEB] mx-1"></div>
-          )}
-        </div>
+            <img
+              src={activeTab === item.key ? item.activeIcon : item.defaultIcon}
+              alt={item.label}
+              className={`${item.iconSize} mb-1`}
+            />
+            <span className="text-[16px] font-medium text-center">
+              {item.label}
+            </span>
+          </div>
+        </Link>
       ))}
     </div>
   );
