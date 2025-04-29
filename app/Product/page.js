@@ -54,7 +54,7 @@ export default function Product() {
                   />
                 </div>
               </Link>
-              <div className="mt-4 md:hidden block top-1/2  transform -translate-y-3/2   p-2  overflow-x-auto lg:w-[400px]">
+              <div className="mt-4 md:hidden block top-1/2  transform -translate-y-[130%]   p-2  overflow-x-auto lg:w-[400px]">
                 <div className="flex gap-2 justify-center items-center">
                   {images.map((img, index) => (
                     <img
@@ -139,7 +139,7 @@ export default function Product() {
             </h3>
             <div className="p-5 lg:p-0">
               <h3 className="text-[#7E7E7E] font-semibold ">BENEFITS</h3>
-              <p className="text-gray-600 lg:mb-2">
+              <p className="text-gray-600 lg:mb-2 pt-3">
                 Lorem ipsum dolor sit amet consectetur. Amet sagittis sociis
                 risus lorem sem ipsum. In pharetra morbi vestibulum faucibus
                 praesent lobortis sed. Lorem ipsum dolor sit amet consectetur.
@@ -147,17 +147,17 @@ export default function Product() {
                 vestibulum faucibus praesent lobortis sed.
               </p>
 
-              <h3 className="text-[#7E7E7E] font-semibold pt-3 ">
+              <h3 className="text-[#7E7E7E] font-semibold pt-5 ">
                 ACHIEVEMENTS
               </h3>
-              <p className="text-gray-600 lg:mb-2">
+              <p className="text-gray-600 lg:mb-2 mb-2 pt-3">
                 Lorem ipsum dolor sit amet consectetur. Amet sagittis sociis
                 risus lorem sem ipsum. In pharetra morbi vestibulum faucibus
                 praesent lobortis sed. Lorem ipsum dolor sit amet consectetur.
                 Amet sagittis sociis risus lorem sem ipsum. In pharetra morbi
                 vestibulum faucibus praesent lobortis sed.
               </p>
-              <button className="bg-[#265BA7] mb-3 lg:mb-0 mt-3 text-white text-[16px] w-full py-[7px] lg:w-[121px] lg:h-[42px]   rounded-[8px] hover:bg-blue-700 transition">
+              <button className="bg-[#265BA7] mb-4 lg:mb-0 mt-3 text-white text-[16px] w-full py-[7px] lg:w-[121px] lg:h-[42px]   rounded-[8px] hover:bg-blue-700 transition">
                 More Details
               </button>
             </div>
