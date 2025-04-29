@@ -6,7 +6,7 @@ export default function Navbar2() {
   return (
     <nav>
       <div className="w-full">
-        <nav className="lg:bg-transperent backdrop-blur-[7.5px] fixed w-full z-20  top-0 start-0 ">
+        <nav className="lg:bg-transperent backdrop-blur-[3.5px] fixed w-full z-20  top-0 start-0 ">
           <div className="max-w-[1320px] h-[85px]  mx-auto flex flex-wrap items-center justify-between p-4">
             <Link href="/">
               <img

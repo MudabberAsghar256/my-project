@@ -39,7 +39,6 @@ export default function BottomNavbar() {
           <div className="absolute right-[35%] top-2  bottom-2 w-px bg-[#7DAAEB] z-0" />
         </>
       )}
-
       {navItems.map((item) => (
         <Link
           key={item.key}
