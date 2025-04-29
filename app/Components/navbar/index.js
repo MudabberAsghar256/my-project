@@ -47,7 +47,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="/services"
+                href=""
                 className="block py-2 px-3 text-white lg:text-[16px]"
               >
                 Contact Us

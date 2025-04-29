@@ -46,7 +46,7 @@ export default function Product() {
               />
 
               <Link href="/Sportlight">
-                <div className="absolute top-[50px] left-[25px] md:hidden block">
+                <div className="absolute top-[35px] left-[25px] md:hidden block">
                   <img
                     className="w-[25px] h-[25px]"
                     src="/image/righttick-img1.svg"

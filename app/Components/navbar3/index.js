@@ -51,7 +51,7 @@ export default function Navbar3() {
                 {[
                   { name: "About Azelis", href: "/" },
                   { name: "Explore All", href: "/Explore" },
-                  { name: "Contact", href: "/services" },
+                  { name: "Contact", href: "" },
                 ].map((item) => (
                   <li key={item.href}>
                     <Link

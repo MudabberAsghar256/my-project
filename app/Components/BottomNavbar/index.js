@@ -25,7 +25,7 @@ export default function BottomNavbar() {
       key: "contact",
       label: "Contact Us",
       defaultIcon: "/image/boNav-logo3.svg",
-      activeIcon: "/image/clipart2447564.png",
+      activeIcon: "/image/md-logo.svg",
       iconSize: "w-[24px] h-[24px]",
       route: "/Product",
     },
