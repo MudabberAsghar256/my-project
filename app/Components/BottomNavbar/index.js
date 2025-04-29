@@ -32,7 +32,7 @@ export default function BottomNavbar() {
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t-[3px] border-[#265BA7] rounded-t-2xl px-2 py-2 grid grid-cols-3 text-sm sm:hidden z-50">
+    <div className="fixed bottom-0 left-0 right-0 bg-[#E9EFF6] border-t-[3px] border-[#265BA7] rounded-t-2xl px-2 py-2 grid grid-cols-3 text-sm sm:hidden z-50">
       {activeTab !== "explore" && (
         <>
           <div className="absolute left-[35%] top-2 bottom-2 w-px bg-[#7DAAEB] z-0" />

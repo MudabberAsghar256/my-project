@@ -1,6 +1,6 @@
 export default function Product1({ image, title, tag, tagColor, description }) {
   return (
-    <div className="flex xl:w-[424px] xl:h-[148px] bg-gray-200 lg:p-[16px] p-3 lg:gap-[20px] gap-[16px] rounded-[10px] border-[#A2BADE] border-2">
+    <div className="flex xl:w-[424px] xl:h-[148px] bg-[#F8FAFD] lg:p-[16px] p-3 lg:gap-[20px] gap-[16px] rounded-[10px] border-[#A2BADE] border-2">
       <img
         className="lg:w-[116px] lg:h-[116px] w-[82px] h-[91px]"
         src={image}
@@ -16,7 +16,7 @@ export default function Product1({ image, title, tag, tagColor, description }) {
         >
           {tag}
         </div>
-        <p className="lg:text-[14px] text-[10px] pt-1 text-[#757575]">
+        <p className=" lg:text-[14px] text-[13px]  text-lg/4 lg:text-lg/5.5 pt-2 text-[#757575]">
           {description}
         </p>
       </div>

@@ -5,40 +5,64 @@ import Product1 from "../Common/product1";
 const tagOptions = [
   {
     tag: "Mild & Mighty",
-    tagColor: "bg-[#26BAAC] pl-2 w-[87px] h-[26px]  p-1",
+    tagColor:
+      "bg-[#26BAAC] pl-2 w-[87px] h-[20px] lg:h-[26px] lg:pt-1   pt-[2px]",
   },
   {
     tag: "Spotlight on Science",
-    tagColor: "bg-[#F9B418] pl-2 w-[125px] h-[26px] p-1",
+    tagColor:
+      "bg-[#F9B418] pl-2 w-[125px] h-[20px] lg:h-[26px] lg:pt-1  pt-[2px]",
   },
-  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF] pl-2 w-[73px] h-[26px] p-1" },
+  {
+    tag: "Grab & Go",
+    tagColor:
+      "bg-[#2AA7DF] pl-2 w-[73px] h-[20px] lg:h-[26px] lg:pt-1  pt-[2px]",
+  },
   {
     tag: "Mild & Mighty",
-    tagColor: "bg-[#26BAAC] pl-2 w-[87px] h-[26px]  p-1",
+    tagColor:
+      "bg-[#26BAAC] pl-2 w-[87px] h-[20px] lg:h-[26px] lg:pt-1  pt-[2px]",
   },
   {
     tag: "Spotlight on Science",
-    tagColor: "bg-[#F9B418] pl-2 w-[125px] h-[26px]  p-1",
+    tagColor:
+      "bg-[#F9B418] pl-2 w-[125px] h-[20px] lg:h-[26px] lg:pt-1  pt-[2px]",
   },
-  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF]  pl-2 w-[73px] h-[26px] p-1" },
+  {
+    tag: "Grab & Go",
+    tagColor:
+      "bg-[#2AA7DF]  pl-2 w-[73px] h-[20px] lg:h-[26px] lg:pt-1   pt-[2px]",
+  },
   {
     tag: "Mild & Mighty",
-    tagColor: "bg-[#26BAAC] pl-2 w-[87px] h-[26px]  p-1",
+    tagColor:
+      "bg-[#26BAAC] pl-2 w-[87px] h-[20px]  lg:h-[26px] lg:pt-1  pt-[2px]",
   },
   {
     tag: "Spotlight on Science",
-    tagColor: "bg-[#F9B418] pl-2 w-[125px] h-[26px]  p-1",
+    tagColor:
+      "bg-[#F9B418] pl-2 w-[125px] h-[26px] lg:h-[26px] lg:pt-1   h-[20px]  pt-[2px]",
   },
-  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF]  pl-2 w-[73px] h-[26px] p-1" },
+  {
+    tag: "Grab & Go",
+    tagColor:
+      "bg-[#2AA7DF]  pl-2 w-[73px] h-[20px] lg:h-[26px] lg:pt-1  pt-[2px]",
+  },
   {
     tag: "Mild & Mighty",
-    tagColor: "bg-[#26BAAC] pl-2 w-[87px] h-[26px]  p-1",
+    tagColor:
+      "bg-[#26BAAC] pl-2 w-[87px] h-[20px] lg:h-[26px] lg:pt-1   pt-[2px]",
   },
   {
     tag: "Spotlight on Science",
-    tagColor: "bg-[#F9B418] pl-2 w-[125px] h-[26px]  p-1",
+    tagColor:
+      "bg-[#F9B418] pl-2 w-[125px] h-[20px] lg:h-[26px] lg:pt-1   pt-[2px]",
   },
-  { tag: "Grab & Go", tagColor: "bg-[#2AA7DF]  pl-2 w-[73px] h-[26px] p-1" },
+  {
+    tag: "Grab & Go",
+    tagColor:
+      "bg-[#2AA7DF]  pl-2 w-[73px] h-[20px] lg:h-[26px] lg:pt-1  pt-[2px]",
+  },
 ];
 const products = Array.from({ length: 12 }, (_, i) => ({
   id: i,
@@ -75,12 +99,12 @@ export default function Explore() {
         </div>
 
         <div className="lg:p-0 mt-0 lg:mt-5 ">
-          <div className="text-[#7E7E7E] pb-3 lg:text-[20px] text-[16px] lg:text-left text-center pt-3 font-semibold  ">
+          <div className="text-[#7E7E7E]  pb-3 lg:text-[20px] text-[16px] lg:text-left text-center pt-3 font-semibold  ">
             Skin Care (9)
           </div>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[20px] gap-[8px]">
             {products.map((product, index) => (
-              <div key={product.id} className="flex flex-col gap-3 ">
+              <div key={product.id} className="flex flex-col gap-3  ">
                 <Product1
                   image={product.image}
                   title={product.title}
