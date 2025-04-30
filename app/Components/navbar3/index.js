@@ -29,7 +29,7 @@ export default function Navbar3() {
 
               <button
                 type="button"
-                className="inline-flex items-center p-2 justify-center text-sm text-white rounded-lg md:hidden"
+                className="inline-flex items-center justify-center text-sm text-white rounded-lg md:hidden"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-expanded={isMenuOpen}
               >
@@ -47,18 +47,18 @@ export default function Navbar3() {
                 isMenuOpen ? "flex" : "hidden"
               } w-full md:flex md:w-auto md:order-1`}
             >
-              <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
+              <ul className="flex flex-col p-4 md:p-0 mt-4 font-sans  rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
                 {[
                   { name: "About Azelis", href: "/" },
                   { name: "Explore All", href: "/Explore" },
-                  { name: "Contact", href: "" },
+                  { name: "Contact Us", href: "" },
                 ].map((item) => (
                   <li key={item.href}>
                     <Link
                       href={item.href}
                       className={`block py-2 px-3 lg:text-[16px] transition-colors duration-300 ${
                         pathname === item.href
-                          ? "text-[#265BA7] font-bold"
+                          ? "text-[#265BA7] font-semibold"
                           : "text-black hover:text-[#265BA7]"
                       }`}
                     >

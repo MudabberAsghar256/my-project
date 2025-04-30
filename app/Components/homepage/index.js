@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 export default function Homepage() {
@@ -13,6 +14,7 @@ export default function Homepage() {
 
   return (
     <div className="relative bg-white w-full">
+      {/* -------------------------------------BackGround layout fixed ------------------------------------- */}
       <div
         style={{
           backgroundColor: "#345BA2",

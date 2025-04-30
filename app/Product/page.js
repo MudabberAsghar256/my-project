@@ -139,7 +139,7 @@ export default function Product() {
             </h3>
             <div className="p-5 lg:p-0">
               <h3 className="text-[#7E7E7E] font-semibold ">BENEFITS</h3>
-              <p className="text-gray-600 lg:mb-2 pt-3">
+              <p className="text-[#121212] lg:mb-2 pt-3">
                 Lorem ipsum dolor sit amet consectetur. Amet sagittis sociis
                 risus lorem sem ipsum. In pharetra morbi vestibulum faucibus
                 praesent lobortis sed. Lorem ipsum dolor sit amet consectetur.
@@ -150,7 +150,7 @@ export default function Product() {
               <h3 className="text-[#7E7E7E] font-semibold pt-5 ">
                 ACHIEVEMENTS
               </h3>
-              <p className="text-gray-600 lg:mb-2 mb-2 pt-3">
+              <p className="text-[#121212] lg:mb-2 mb-2 pt-3">
                 Lorem ipsum dolor sit amet consectetur. Amet sagittis sociis
                 risus lorem sem ipsum. In pharetra morbi vestibulum faucibus
                 praesent lobortis sed. Lorem ipsum dolor sit amet consectetur.

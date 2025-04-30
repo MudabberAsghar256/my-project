@@ -25,7 +25,7 @@ export default function Navbar2() {
 
               <button
                 type="button"
-                className="inline-flex items-center p-2  justify-center text-sm text-white rounded-lg md:hidden"
+                className="inline-flex items-center justify-center text-sm text-white rounded-lg md:hidden"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-expanded={isMenuOpen}
               >
@@ -68,7 +68,6 @@ export default function Navbar2() {
                     Contact
                   </Link>
                 </li>
-
                 <li className="sm:block md:hidden">
                   <button
                     type="button"

@@ -1,6 +1,6 @@
 export default function Product1({ image, title, tag, tagColor, description }) {
   return (
-    <div className="flex xl:w-[424px] xl:h-[148px] bg-[#F8FAFD] lg:p-[16px] p-3 lg:gap-[20px] gap-[16px] rounded-[10px] border-[#A2BADE] border-2">
+    <div className="flex xl:w-[424px] xl:h-[148px] bg-[#F8FAFD] lg:p-[16px] p-[10px] lg:gap-[20px] gap-[16px] rounded-[10px] border-[#A2BADE] border-2">
       <img
         className="lg:w-[116px] lg:h-[116px] w-[82px] h-[91px]"
         src={image}

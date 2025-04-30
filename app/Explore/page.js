@@ -80,18 +80,17 @@ export default function Explore() {
       <div className="max-w-[1320]  mx-auto pb-[10px] p-5 xl:p-0">
         <div className="">
           <Link href="/Product">
-            <div className="flex items-center lg:pt-25  justify-between text-center relative">
-              <div className="flex items-center gap-2 pt-25 lg:pt-0 absolute left-0">
-                <img
-                  className="w-[25px] h-[25px]"
-                  src="/image/righttick-img1.svg"
-                  alt="Tick Icon"
-                />
-                <h1 className="text-[#265BA7] text-[16px] hidden md:block">
-                  Back
-                </h1>
-              </div>
-              <div className="mx-auto lg:text-black text-[#265BA7] lg:text-[24px] text-[18px] pt-25 lg:pt-0 font-semibold">
+            <div className="flex gap-2 items-center lg:pt-25 pt-18  justify-between text-center relative">
+              <img
+                className="w-[25px] h-[25px]"
+                src="/image/righttick-img1.svg"
+                alt="Tick Icon"
+              />
+              <h1 className="text-[#265BA7] text-[16px] hidden md:block">
+                Back
+              </h1>
+
+              <div className="mx-auto lg:text-black text-[#265BA7] lg:pr-30 pr-10 lg:text-[24px] text-[18px]  lg:pt-0 font-semibold">
                 Explore All Products
               </div>
             </div>
@@ -99,7 +98,7 @@ export default function Explore() {
         </div>
 
         <div className="lg:p-0 mt-0 lg:mt-5 ">
-          <div className="text-[#7E7E7E]  pb-3 lg:text-[20px] text-[16px] lg:text-left text-center pt-3 font-semibold  ">
+          <div className="text-[#7E7E7E]  pb-2 lg:text-[20px] text-[16px] lg:text-left text-center pt-3 font-semibold  ">
             Skin Care (9)
           </div>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[20px] gap-[8px]">
