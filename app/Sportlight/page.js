@@ -28,7 +28,10 @@ export default function Spotlight() {
                 alt="Tick Icon"
               />
             </Link>
-            <img className="mx-auto lg:pt-5" src="/image/frame-logo4.svg" />
+            <img
+              className="mx-auto pr-7 lg:pr-0 lg:pt-5"
+              src="/image/frame-logo4.svg"
+            />
           </div>
           <h1 className="font-bold lg:text-[24px] text-[16px] pt-2">
             Spotlight on Science
@@ -41,7 +44,7 @@ export default function Spotlight() {
           </p>
         </div>
 
-        <div className="max-w-[1320px] mx-auto pb-[30px] pt-16 px-4 lg:px-0">
+        <div className="max-w-[1320px] mx-auto pb-[30px] lg:pt-16 pt-7 px-4 lg:px-0">
           <div className="flex items-center justify-between text-center relative">
             <div className="flex items-center absolute left-0">
               <Link href="/Catalog">
@@ -63,7 +66,7 @@ export default function Spotlight() {
           </div>
 
           <Link href="/Product">
-            <div className="pt-7">
+            <div className="pt-3 lg:pt-6">
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
                 {products.map((product) => (
                   <Product2
