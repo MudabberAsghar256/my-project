@@ -22,7 +22,6 @@ export default function Navbar2() {
                   through
                 </span> <br /> formulation
               </div>
-
               <button
                 type="button"
                 className="inline-flex items-center justify-center text-sm text-white rounded-lg md:hidden"

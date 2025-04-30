@@ -19,7 +19,7 @@ export default function Spotlight() {
       ></div>
 
       <div className="relative z-10">
-        <div className="text-black text-center px-4 pt-32 lg:pt-40">
+        <div className="text-black text-center px-4 pt-29 lg:pt-40">
           <div className="flex justify-center items-center">
             <Link href="/Catalog">
               <img
