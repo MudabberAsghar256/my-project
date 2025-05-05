@@ -1,4 +1,3 @@
-// app/Components/AppHeightWrapper.jsx
 "use client";
 
 import { useEffect } from "react";

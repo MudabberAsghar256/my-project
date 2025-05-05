@@ -20,8 +20,7 @@ export default function Product() {
       <img
         src="/image/background-logo.svg"
         alt="Background Logo"
-        className="absolute top-0 right-0 xl:w-[500px] xl:h-[516px] lg:block hidden 
-"
+        className="absolute top-0 right-0 xl:w-[500px] xl:h-[516px] lg:block hidden"
       />
       <div className="relative">
         <div className="max-w-[1320px] mx-auto  w-full grid grid-cols-1 md:grid-cols-10 lg:pt-25 pt-21">
@@ -44,7 +43,6 @@ export default function Product() {
                 alt="Product"
                 className="w-full h-full  object-cover lg:rounded-[8px]"
               />
-
               <Link href="/Sportlight">
                 <div className="absolute top-[35px] left-[25px] md:hidden block">
                   <img
@@ -67,7 +65,6 @@ export default function Product() {
                   ))}
                 </div>
               </div>
-
               <button
                 onClick={handlePrev}
                 className="absolute lg:top-1/2 md:top-2/4 top-[50%] left-2 transform -translate-y-1/2  r p-2"
@@ -78,7 +75,6 @@ export default function Product() {
                   className="w-[33px] h-[33px]"
                 />
               </button>
-
               <button
                 onClick={handleNext}
                 className="absolute lg:top-1/2 md:top-2/4 top-[50%] right-2 transform -translate-y-1/2  p-2"
@@ -90,7 +86,6 @@ export default function Product() {
                 />
               </button>
             </div>
-
             <div className="mt-4 md:block hidden h overflow-x-auto lg:w-[400px]">
               <div className="flex gap-2">
                 {images.map((img, index) => (
@@ -105,7 +100,6 @@ export default function Product() {
               </div>
             </div>
           </div>
-
           <div className=" lg:p-5  lg:mt-2  col-span-5">
             <div className="p-5 lg:p-0">
               <h2 className="lg:text-[32px] text-[24px] font-bold text-blue-900 lg:mb-4">
@@ -146,7 +140,6 @@ export default function Product() {
                 Amet sagittis sociis risus lorem sem ipsum. In pharetra morbi
                 vestibulum faucibus praesent lobortis sed.
               </p>
-
               <h3 className="text-[#7E7E7E] font-semibold pt-5 ">
                 ACHIEVEMENTS
               </h3>

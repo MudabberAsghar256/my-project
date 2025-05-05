@@ -1,10 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <nav className="bg-[#345BA2] fixed z-20 top-0 start-0 w-full">
       <div className="flex max-w-[1320px] mx-auto justify-between items-center p-4">
@@ -15,14 +13,13 @@ export default function Navbar() {
             alt="Logo"
           />
         </Link>
-
         <div className="flex md:order-2 lg:gap-5 space-x-3 md:space-x-0">
           <div className=" text-white text-lg/4 text-right lg:w-[103px] lg:h-[57px]">
             Innovation
-            <br /> through <br /> formulation
+            <br /> through <br />
+             formulation
           </div>
         </div>
-
         <div
           className={`${
             isMenuOpen ? "flex" : "hidden"

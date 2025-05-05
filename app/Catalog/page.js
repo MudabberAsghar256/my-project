@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Navbar from "../Components/navbar";
 export default function Catalog() {
   const [windowWidth, setWindowWidth] = useState(0);
 
@@ -14,7 +13,7 @@ export default function Catalog() {
 
   return (
     <div className="relative bg-white">
-      <Navbar />
+      {/* ---------------------------Background Color fixed ---------------------------- */}
       <div
         style={{
           backgroundColor: "#345BA2",
@@ -46,6 +45,7 @@ export default function Catalog() {
 
         <div className="max-w-[1320px] mx-auto pb-[50px] lg:pb-0 lg:pt-20 pt-5 bg-white">
           <div className="  pt-3 p-5  xl:p-0 ">
+            {/* -----------------------------------Center Route  Back Button --------------------------- */}
             <div className="flex items-center justify-between text-center relative pb-[20px] lg:pt-7 pt-10">
               <div className="flex items-center pt-0 absolute left-0">
                 <Link href="/">
@@ -67,7 +67,7 @@ export default function Catalog() {
                 Choose Your Experience
               </div>
             </div>
-
+            {/* -----------------------------------------------Galary Images ----------------------------------------- */}
             <div className="">
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 gap-4  lg:p-0 ">
                 <div className="relative w-full h-auto">
@@ -138,6 +138,7 @@ export default function Catalog() {
                   </div>
                 </div>
               </div>
+              {/* ------------------------------------------Galary Imagea 2----------------------------------------- */}
               <div className="grid sm:grid-cols-1  lg:grid-cols-2 lg:gap-6 gap-4 pb-5  lg:pt-6">
                 <div className="relative w-full  lg:mt-0 mt-5 lg:h-[266px] rounded-[12px] overflow-hidden">
                   <img

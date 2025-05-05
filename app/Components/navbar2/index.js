@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 export default function Navbar2() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen] = useState(false);
   return (
     <nav>
       <div className="w-full">
@@ -25,8 +25,6 @@ export default function Navbar2() {
               <button
                 type="button"
                 className="inline-flex items-center justify-center text-sm text-white rounded-lg md:hidden"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                aria-expanded={isMenuOpen}
               >
                 <span className="sr-only">Open main menu</span>
                 <div className=" text-[#235CA8] text-right text-lg/4">
@@ -66,14 +64,6 @@ export default function Navbar2() {
                   >
                     Contact
                   </Link>
-                </li>
-                <li className="sm:block md:hidden">
-                  <button
-                    type="button"
-                    className="w-full text-white bg-gray-700 rounded-lg text-sm px-4 py-2 text-center hover:bg-amber-600"
-                  >
-                    Login
-                  </button>
                 </li>
               </ul>
             </div>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function BottomNavbar() {
-  const [activeTab, setActiveTab] = useState("explore");
+  const [activeTab, setActiveTab] = useState("");
   const navItems = [
     {
       key: "about",
