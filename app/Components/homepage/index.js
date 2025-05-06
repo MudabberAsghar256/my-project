@@ -11,7 +11,7 @@ export default function Homepage() {
   }, []);
   return (
     <div className="relative bg-white w-full">
-      {/* -------------------------------------BackGround layout fixed ------------------------------------- */}
+      {/*-------------------------------------BackGround layout fixed ------------------------------------- */}
       <div
         style={{
           backgroundColor: "#345BA2",
@@ -29,22 +29,22 @@ export default function Homepage() {
           zIndex: 0,
         }}
       ></div>
-      <div className=" sm:h-[380px] h-[255px] bg-white ">
-        <div className="relative text-white lg:space-y-[10px]  lg:mr-[80px] justify-center items-center text-center text-base/7 lg:text-base/10 ">
+      <div className="sm:h-[380px] h-[255px] bg-white ">
+        <div className="relative text-white lg:space-y-[10px]  lg:mr-[80px] justify-center items-center text-center text-base/7 lg:text-base/10">
           <h1 className="lg:text-[42px] lg:mr-15 mr-12 text-[25px]  lg:pt-40 pt-30">
             Azelis brings
           </h1>
-          <div className="lg:ml-40 ml-20 text-[#2AA7DF] lg:text-[42px] text-[25px] ">
+          <div className="lg:ml-40 ml-20 text-[#2AA7DF] lg:text-[42px] text-[25px]">
             <span className="font-bold pt-1">Your</span> ideas
           </div>
           <div className="lg:text-[42px] text-[25px] mr-[10px]">to life</div>
         </div>
-        <div className=" lg:pt-27 pt-15 max-w-[1320px] pb-[70px] mx-auto bg-white ">
-          <div className="  pt-3 p-5 xl:p-0 ">
+        <div className="lg:pt-27 pt-15 max-w-[1320px] pb-[70px] mx-auto bg-white ">
+          <div className="pt-3 p-5 xl:p-0">
             <div className="justify-center bg-white items-center text-center lg:pr-[30px]  lg:pb-[24px] pb-[20px]  font-bold lg:text-[24px] text-[18px] text-black">
               Choose Your Zone
             </div>
-            {/* --------------------------------------Home Page 2 Simple Cards----------------------------------- */}
+            {/*--------------------------------------Home Page 2 Simple Cards----------------------------------- */}
             <div className="main grid sm:grid-cols-1 lg:grid-cols-2 lg:gap-[24px] gap-[16px]">
               <div className="child-1 xl:w-[648px] xl:h-[203px] border-2 border-blue-200  lg:p-6 p-5 rounded-[16px] bg-[#A2BADE14] shadow-lg">
                 <div className="md:block flex gap-[6px]">

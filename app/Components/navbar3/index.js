@@ -10,7 +10,7 @@ export default function Navbar3() {
   return (
     <nav>
       <div className="w-full">
-        <nav className="bg-white fixed w-full z-20 top-0 start-0 lg:shadow-lg">
+        <nav className="bg-white fixed w-full z-20 top-0 start-0 lg:shadow-lg overflow-auto">
           <div className="max-w-[1320px] h-[85px] mx-auto flex flex-wrap items-center justify-between p-4 ">
             <Link href="/">
               <img

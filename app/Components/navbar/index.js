@@ -4,7 +4,7 @@ import React, { useState } from "react";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="bg-[#345BA2] fixed z-20 top-0 start-0 w-full">
+    <nav className="bg-[#345BA2] fixed z-20 top-0 start-0 w-full overflow-auto">
       <div className="flex max-w-[1320px] mx-auto justify-between items-center p-4">
         <Link href="/">
           <img
@@ -17,7 +17,7 @@ export default function Navbar() {
           <div className=" text-white text-lg/4 text-right lg:w-[103px] lg:h-[57px]">
             Innovation
             <br /> through <br />
-             formulation
+            formulation
           </div>
         </div>
         <div

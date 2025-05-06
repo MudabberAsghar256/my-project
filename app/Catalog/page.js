@@ -139,7 +139,7 @@ export default function Catalog() {
                 </div>
               </div>
               {/* ------------------------------------------Galary Imagea 2----------------------------------------- */}
-              <div className="grid sm:grid-cols-1  lg:grid-cols-2 lg:gap-6 gap-4 pb-5  lg:pt-6">
+              <div className="grid sm:grid-cols-1  lg:grid-cols-2 lg:gap-6 gap-4 pb-9  lg:pt-6">
                 <div className="relative w-full  lg:mt-0 mt-5 lg:h-[266px] rounded-[12px] overflow-hidden">
                   <img
                     src="/image/frame-img4.svg"

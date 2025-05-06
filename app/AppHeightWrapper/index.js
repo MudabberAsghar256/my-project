@@ -1,7 +1,5 @@
 "use client";
-
 import { useEffect } from "react";
-
 export default function AppHeightWrapper({ children }) {
   useEffect(() => {
     const setAppHeight = () => {
@@ -14,7 +12,6 @@ export default function AppHeightWrapper({ children }) {
     window.addEventListener("resize", setAppHeight);
     return () => window.removeEventListener("resize", setAppHeight);
   }, []);
-
   return (
     <div className="min-h-[var(--app-height)] w-full flex flex-col bg-white">
       <main className="flex-grow pb-[70px] lg:pb-0">{children}</main>

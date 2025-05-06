@@ -16,7 +16,7 @@ export default function Product() {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
   return (
-    <div className="relative md:p-5  w-full bg-white lg:bg-[linear-gradient(to_right,_#F8FAFD_41%,_white_30%)]">
+    <div className="relative md:p-5 w-full bg-white lg:bg-[linear-gradient(to_right,_#F8FAFD_41%,_white_30%)]">
       <img
         src="/image/background-logo.svg"
         alt="Background Logo"
@@ -41,7 +41,7 @@ export default function Product() {
               <img
                 src={images[currentIndex]}
                 alt="Product"
-                className="w-full h-full  object-cover lg:rounded-[8px]"
+                className="w-full h-full object-cover lg:rounded-[8px]"
               />
               <Link href="/Sportlight">
                 <div className="absolute top-[35px] left-[25px] md:hidden block">

@@ -11,6 +11,7 @@ export default function Spotlight() {
   }));
   return (
     <div className="relative bg-white overflow-hidden">
+      {/*-----------------------------background color-------------------------*/}
       <div
         className="absolute top-[-127px] left-1/2 -translate-x-1/2 w-[1048px] h-[370px] rounded-full blur-[100px] opacity-[0.15] z-0"
         style={{ background: "#F9B418" }}
@@ -40,7 +41,6 @@ export default function Spotlight() {
             viverra sed malesuada arcu in.
           </p>
         </div>
-
         <div className=" pb-[30px] lg:pt-16 pt-7 px-4 lg:px-0">
           <div className="flex items-center justify-between text-center relative">
             <div className="flex items-center absolute left-0">
